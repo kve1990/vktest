@@ -25,7 +25,7 @@
         if (resp && resp.session) {
           const userId = resp.session.user.id;
           console.log('GET FRIENDS');
-          VK.Friends.get({user_id: userId, count: 5});
+          VK.friends.get({user_id: userId, count: 5});
         }
       }, {scope:2});
     }
